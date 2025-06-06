@@ -1,0 +1,703 @@
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wohnraum Plus Mainz - Premium Immobilienvermittlung</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(0, 42, 92, 0.7), rgba(0, 42, 92, 0.7)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1973&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-primary {
+            background-color: #FF6B35;
+            border-color: #FF6B35;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #e55a2b;
+            border-color: #e55a2b;
+        }
+        .text-primary {
+            color: #004E89;
+        }
+        .bg-primary {
+            background-color: #004E89;
+        }
+        .text-secondary {
+            color: #FF6B35;
+        }
+        .bg-secondary {
+            background-color: #FF6B35;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+        .badge {
+            background-color: #FF6B35;
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+        .shadow-custom {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md py-4">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <div class="flex items-center">
+                <span class="text-xl font-bold text-primary">Wohnraum<span class="text-secondary">Plus</span></span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="font-medium hover:text-secondary">Start</a>
+                <a href="#about" class="font-medium hover:text-secondary">Über Uns</a>
+                <a href="#properties" class="font-medium hover:text-secondary">Angebote</a>
+                <a href="#testimonials" class="font-medium hover:text-secondary">Referenzen</a>
+                <a href="#contact" class="font-medium hover:text-secondary">Kontakt</a>
+            </div>
+            <div class="md:hidden">
+                <button class="focus:outline-none">
+                    <i class="fas fa-bars text-gray-700"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section h-96 flex items-center">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">Premium Wohnungen in Mainz</h1>
+            <p class="text-xl text-white mb-8">500€ unter Marktpreis - exklusiv bei Wohnraum Plus</p>
+            <a href="#contact" class="btn-primary py-3 px-8 rounded-full font-semibold text-lg">Jetzt Bewerben</a>
+        </div>
+    </section>
+
+    <!-- Trust Signals -->
+    <section class="py-8 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap justify-center items-center text-center space-x-4 md:space-x-12">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-check-circle text-secondary text-2xl mr-2"></i>
+                    <span class="font-medium">Seit 2019 für Sie da</span>
+                </div>
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-medal text-secondary text-2xl mr-2"></i>
+                    <span class="font-medium">TÜV-geprüfte Vermittlung</span>
+                </div>
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-users text-secondary text-2xl mr-2"></i>
+                    <span class="font-medium">Über 4.000 zufriedene Mieter</span>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-home text-secondary text-2xl mr-2"></i>
+                    <span class="font-medium">Lokaler Immobilien-Experte</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+                    <div class="bg-primary rounded-lg p-8 text-white relative">
+                        <div class="absolute -top-5 -left-5 bg-white rounded-full w-16 h-16 flex items-center justify-center">
+                            <i class="fas fa-home text-primary text-3xl"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold mb-6">Über Wohnraum Plus</h2>
+                        <p class="mb-4">Wohnraum Plus ist Ihr vertrauensvoller Partner für die Vermittlung von Premium-Wohnungen in Mainz und Umgebung. Seit 2019 haben wir uns auf faire Mietpreise und transparente Vermittlung spezialisiert.</p>
+                        <p class="mb-4">Unsere Mission: Qualitätswohnraum zu fairen Preisen für zuverlässige Mieter vermitteln. Wir arbeiten eng mit Vermietern zusammen, die bewusst unter Marktpreis vermieten möchten, um langfristige und stabile Mietverhältnisse zu fördern.</p>
+                        <div class="mt-8 flex flex-wrap">
+                            <div class="w-1/2 mb-4">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-secondary mr-2"></i>
+                                    <span>Professionell</span>
+                                </div>
+                            </div>
+                            <div class="w-1/2 mb-4">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-secondary mr-2"></i>
+                                    <span>Transparent</span>
+                                </div>
+                            </div>
+                            <div class="w-1/2 mb-4">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-secondary mr-2"></i>
+                                    <span>Zuverlässig</span>
+                                </div>
+                            </div>
+                            <div class="w-1/2 mb-4">
+                                <div class="flex items-center">
+                                    <i class="fas fa-check text-secondary mr-2"></i>
+                                    <span>Fair</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 lg:pl-12">
+                    <h3 class="text-2xl font-semibold mb-6">Warum Vermieter uns vertrauen</h3>
+                    <p class="mb-6">Unsere Vermieter schätzen unseren gründlichen Auswahlprozess, der zuverlässige und langfristige Mieter garantiert. Wir übernehmen 90% der Vermittlungskosten und ermöglichen es Vermietern, ihre Immobilien unter Marktpreis anzubieten.</p>
+                    
+                    <div class="bg-gray-100 p-6 rounded-lg mb-6">
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-quote-left text-3xl text-secondary mr-4"></i>
+                            <p class="italic">"Mit Wohnraum Plus habe ich endlich einen Partner gefunden, der meine Vermietungsphilosophie teilt. Lieber zuverlässige Mieter zu einem fairen Preis als ständige Wechsel und Leerstände."</p>
+                        </div>
+                        <p class="font-semibold text-right">- Thomas M., Vermieter seit 2020</p>
+                    </div>
+                    
+                    <div class="flex flex-wrap">
+                        <div class="w-1/2 md:w-1/4 mb-4">
+                            <div class="text-center">
+                                <span class="block text-4xl font-bold text-primary">98%</span>
+                                <span class="text-sm">Zufriedenheit</span>
+                            </div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 mb-4">
+                            <div class="text-center">
+                                <span class="block text-4xl font-bold text-primary">500+</span>
+                                <span class="text-sm">Vermittlungen</span>
+                            </div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 mb-4">
+                            <div class="text-center">
+                                <span class="block text-4xl font-bold text-primary">5.7M€</span>
+                                <span class="text-sm">Mietersparnis</span>
+                            </div>
+                        </div>
+                        <div class="w-1/2 md:w-1/4 mb-4">
+                            <div class="text-center">
+                                <span class="block text-4xl font-bold text-primary">3.2J</span>
+                                <span class="text-sm">Ø Mietdauer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Properties -->
+    <section id="properties" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Premium-Angebote</h2>
+                <p class="text-lg max-w-2xl mx-auto">Entdecken Sie unsere exklusiven Wohnungsangebote - alle unter dem aktuellen Marktpreis und nur für ausgewählte Mieter verfügbar</p>
+            </div>
+            
+            <!-- Featured Property -->
+            <div class="bg-white rounded-lg overflow-hidden shadow-custom mb-12 transition duration-300 transform hover:scale-[1.02]">
+                <div class="md:flex">
+                    <div class="md:w-2/5 h-64 md:h-auto" style="background: url('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="md:w-3/5 p-6">
+                        <div class="flex justify-between items-start">
+                            <div>
+                                <span class="badge">Neubau</span>
+                                <span class="badge ml-2">Erstbezug</span>
+                                <h3 class="text-2xl font-bold mt-2">Premium-Neubau in Gonsenheim</h3>
+                                <p class="text-gray-500">Uni-Nähe, Neubaugebiet</p>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-gray-500 line-through">1.800€ warm</p>
+                                <p class="text-3xl font-bold text-secondary">1.300€ warm</p>
+                                <p class="text-sm text-green-600 font-medium">500€ unter Marktpreis!</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-4">
+                            <div class="flex flex-wrap">
+                                <div class="w-1/2 md:w-1/4 mb-3">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-expand text-primary mr-2"></i>
+                                        <span>90 m²</span>
+                                    </div>
+                                </div>
+                                <div class="w-1/2 md:w-1/4 mb-3">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-door-open text-primary mr-2"></i>
+                                        <span>3 Zimmer</span>
+                                    </div>
+                                </div>
+                                <div class="w-1/2 md:w-1/4 mb-3">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-bath text-primary mr-2"></i>
+                                        <span>Premium Bad</span>
+                                    </div>
+                                </div>
+                                <div class="w-1/2 md:w-1/4 mb-3">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-utensils text-primary mr-2"></i>
+                                        <span>Designer-Küche</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="text-gray-600 my-4">Hochwertige 3-Zimmer Neubauwohnung mit exklusiver Ausstattung, Tageslicht-Bad, offener Wohnküche und Balkon. Erstbezug nach Fertigstellung.</p>
+                            <div class="mt-4 flex justify-between items-center">
+                                <div>
+                                    <span class="text-xs text-red-600 font-semibold">NUR NOCH 2 VON 10 BEWERBUNGSPLÄTZEN VERFÜGBAR!</span>
+                                </div>
+                                <a href="#contact" class="btn-primary py-2 px-5 rounded text-sm font-medium">Jetzt bewerben</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other Properties -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Property 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-custom transition duration-300 ease-in-out card-hover">
+                    <div class="h-48" style="background: url('https://images.unsplash.com/photo-1551361415-69c87624334f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="badge">Altbau</span>
+                                <h3 class="font-bold mt-2">Charmante Altbauwohnung</h3>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-gray-500 line-through">1.400€</p>
+                                <p class="text-xl font-bold text-secondary">1.100€</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-500">Mainz - Altstadt</p>
+                        <div class="flex justify-between mt-3 text-sm">
+                            <span><i class="fas fa-expand text-primary mr-1"></i> 75 m²</span>
+                            <span><i class="fas fa-door-open text-primary mr-1"></i> 2 Zimmer</span>
+                            <span><i class="fas fa-couch text-primary mr-1"></i> Balkon</span>
+                        </div>
+                        <div class="mt-4">
+                            <span class="text-xs text-gray-500">Verfügbar ab 01.08.2025</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-custom transition duration-300 ease-in-out card-hover">
+                    <div class="h-48" style="background: url('https://images.unsplash.com/photo-1493809842364-78817add7ffb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="badge">Studio</span>
+                                <h3 class="font-bold mt-2">Modernes Studio</h3>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-gray-500 line-through">800€</p>
+                                <p class="text-xl font-bold text-secondary">650€</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-500">Mainz - Bretzenheim</p>
+                        <div class="flex justify-between mt-3 text-sm">
+                            <span><i class="fas fa-expand text-primary mr-1"></i> 40 m²</span>
+                            <span><i class="fas fa-door-open text-primary mr-1"></i> 1 Zimmer</span>
+                            <span><i class="fas fa-wifi text-primary mr-1"></i> Smart Home</span>
+                        </div>
+                        <div class="mt-4">
+                            <span class="text-xs text-gray-500">Verfügbar ab 15.07.2025</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Property 3 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-custom transition duration-300 ease-in-out card-hover">
+                    <div class="h-48" style="background: url('https://images.unsplash.com/photo-1529408632839-a54952c491e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80'); background-size: cover; background-position: center;"></div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <div>
+                                <span class="badge">Penthouse</span>
+                                <h3 class="font-bold mt-2">Luxus Penthouse</h3>
+                            </div>
+                            <div class="text-right">
+                                <p class="text-gray-500 line-through">2.200€</p>
+                                <p class="text-xl font-bold text-secondary">1.800€</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-500">Mainz - Neustadt</p>
+                        <div class="flex justify-between mt-3 text-sm">
+                            <span><i class="fas fa-expand text-primary mr-1"></i> 120 m²</span>
+                            <span><i class="fas fa-door-open text-primary mr-1"></i> 4 Zimmer</span>
+                            <span><i class="fas fa-umbrella-beach text-primary mr-1"></i> Dachterrasse</span>
+                        </div>
+                        <div class="mt-4">
+                            <span class="text-xs text-gray-500">Verfügbar ab 01.09.2025</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="font-medium mb-2">Interessiert an unseren Premium-Angeboten?</p>
+                <a href="#contact" class="btn-primary py-2 px-6 rounded-full font-medium inline-block">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-primary mb-4">Das sagen unsere Kunden</h2>
+                <p class="text-lg max-w-2xl mx-auto">Erfahrungen von zufriedenen Mietern, die durch uns ihre Traumwohnung gefunden haben</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-6 rounded-lg shadow-custom relative">
+                    <div class="absolute -top-5 right-5">
+                        <i class="fas fa-quote-right text-4xl text-gray-200"></i>
+                    </div>
+                    <div class="mb-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="italic mb-6">"Nach 8 Monaten erfolgloser Suche hat Wohnraum Plus mir innerhalb einer Woche meine Traumwohnung vermittelt - und das 400€ unter dem, was ich vorher zahlen wollte!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">
+                            FK
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-semibold">Familie Koch</p>
+                            <p class="text-sm text-gray-500">Mainz-Bretzenheim</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-6 rounded-lg shadow-custom relative">
+                    <div class="absolute -top-5 right-5">
+                        <i class="fas fa-quote-right text-4xl text-gray-200"></i>
+                    </div>
+                    <div class="mb-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="italic mb-6">"Als Student dachte ich, ich hätte keine Chance auf eine so gute Wohnung. Der Bewerbungsprozess bei Wohnraum Plus war transparent, fair und schnell. Jetzt wohne ich für weniger Geld in einer viel besseren Lage!"</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">
+                            TM
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-semibold">Tim Müller</p>
+                            <p class="text-sm text-gray-500">Student</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-6 rounded-lg shadow-custom relative">
+                    <div class="absolute -top-5 right-5">
+                        <i class="fas fa-quote-right text-4xl text-gray-200"></i>
+                    </div>
+                    <div class="mb-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <p class="italic mb-6">"Professionell, transparent und kundenorientiert! Die Bewerbungsgebühr von 75€ war jeden Cent wert - die Ersparnisse durch die günstige Miete haben das schon im ersten Monat mehr als ausgeglichen."</p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl">
+                            DM
+                        </div>
+                        <div class="ml-4">
+                            <p class="font-semibold">David Meyer</p>
+                            <p class="text-sm text-gray-500">Mainz-Gonsenheim</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Warum Wohnraum Plus?</h2>
+                <p class="text-lg max-w-2xl mx-auto opacity-90">Wir heben uns ab durch faire Preise, transparente Vermittlung und exklusive Angebote</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-percentage text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Unter Marktpreis</h3>
+                    <p class="opacity-80">Alle unsere Wohnungen werden 15-30% unter dem aktuellen Marktpreis vermietet</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-bolt text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Schnelle Vermittlung</h3>
+                    <p class="opacity-80">Von der Bewerbung bis zur Schlüsselübergabe in durchschnittlich nur 7 Tagen</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clipboard-check text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Faire Auswahl</h3>
+                    <p class="opacity-80">Transparenter Bewerbungsprozess mit gleichen Chancen für alle qualifizierten Bewerber</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-secondary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Langfristige Betreuung</h3>
+                    <p class="opacity-80">Wir bleiben auch nach der Vermittlung Ihr Ansprechpartner für alle Anliegen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap -mx-4">
+                <div class="w-full lg:w-1/2 px-4 mb-12 lg:mb-0">
+                    <h2 class="text-3xl font-bold text-primary mb-6">Kontaktieren Sie uns</h2>
+                    <p class="text-lg mb-8">Interessieren Sie sich für eine unserer Premium-Wohnungen oder haben Sie Fragen zu unserem Service? Füllen Sie das Formular aus, und wir melden uns schnellstmöglich bei Ihnen.</p>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center mr-4">
+                                <i class="fas fa-map-marker-alt text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Adresse</p>
+                                <p>Rheinstraße 42, 55116 Mainz</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center mb-4">
+                            <div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center mr-4">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">E-Mail</p>
+                                <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3e575058517e495156504c5f4b53134e524b4d105a5b">[email&#160;protected]</a></p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 rounded-full bg-secondary flex items-center justify-center mr-4">
+                                <i class="fas fa-phone-alt text-white"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Telefon</p>
+                                <p>06131 / 123 456 78</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-100 p-6 rounded-lg">
+                        <h3 class="font-bold text-lg mb-4">Öffnungszeiten</h3>
+                        <div class="flex justify-between mb-2">
+                            <span>Montag - Freitag</span>
+                            <span>09:00 - 18:00 Uhr</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Samstag</span>
+                            <span>10:00 - 14:00 Uhr</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-1/2 px-4">
+                    <div class="bg-white rounded-lg shadow-custom p-8">
+                        <h3 class="font-bold text-2xl mb-6">Bewerben Sie sich jetzt</h3>
+                        
+                        <form>
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="name">Name</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Ihr vollständiger Name">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="email">E-Mail</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Ihre E-Mail-Adresse">
+                            </div>
+                            
+                            <div class="mb-4">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="phone">Telefonnummer</label>
+                                <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="tel" placeholder="Ihre Telefonnummer">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label class="block text-gray-700 text-sm font-bold mb-2" for="message">Nachricht</label>
+                                <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline h-32" id="message" placeholder="Ihre Nachricht oder Anfrage"></textarea>
+                            </div>
+                            
+                            <div class="flex items-center mb-6">
+                                <input class="mr-2 leading-tight" type="checkbox" id="terms">
+                                <label class="text-sm text-gray-600" for="terms">
+                                    Ich habe die <a href="#" class="text-secondary hover:underline">Datenschutzbestimmungen</a> gelesen und akzeptiere sie.
+                                </label>
+                            </div>
+                            
+                            <div class="flex items-center justify-between">
+                                <button class="btn-primary py-3 px-6 rounded font-bold" type="button">
+                                    Bewerbung absenden
+                                </button>
+                                <span class="text-xs text-gray-500">* Bewerbungsgebühr: 75€</span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-12 bg-secondary text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4">Bereit, Ihre Traumwohnung zu finden?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">Bewerben Sie sich jetzt für eines unserer exklusiven Angebote und sparen Sie bis zu 6.000€ jährlich an Mietkosten!</p>
+            <div class="inline-block">
+                <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+                    <a href="#contact" class="bg-white text-secondary py-3 px-8 rounded-full font-bold hover:bg-gray-100 transition duration-300">Jetzt bewerben</a>
+                    <a href="#properties" class="border-2 border-white text-white py-3 px-8 rounded-full font-bold hover:bg-white hover:text-secondary transition duration-300">Angebote ansehen</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">Wohnraum<span class="text-secondary">Plus</span></h3>
+                    <p class="mb-4">Ihr vertrauensvoller Partner für Premium-Wohnungen in Mainz und Umgebung zu fairen Preisen.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-secondary transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-secondary transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-secondary transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="w-full md:w-1/3 mb-6 md:mb-0">
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul>
+                        <li class="mb-2"><a href="#" class="hover:text-secondary transition duration-300">Startseite</a></li>
+                        <li class="mb-2"><a href="#about" class="hover:text-secondary transition duration-300">Über Uns</a></li>
+                        <li class="mb-2"><a href="#properties" class="hover:text-secondary transition duration-300">Angebote</a></li>
+                        <li class="mb-2"><a href="#testimonials" class="hover:text-secondary transition duration-300">Referenzen</a></li>
+                        <li><a href="#contact" class="hover:text-secondary transition duration-300">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="w-full md:w-1/3">
+                    <h4 class="font-bold mb-4">Kontakt</h4>
+                    <ul>
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-secondary"></i>
+                            <span>Rheinstraße 42, 55116 Mainz</span>
+                        </li>
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-envelope mr-2 text-secondary"></i>
+                            <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="1c75727a735c6b7374726e7d6971316c70696f327879">[email&#160;protected]</a></span>
+                        </li>
+                        <li class="mb-2 flex items-center">
+                            <i class="fas fa-phone-alt mr-2 text-secondary"></i>
+                            <span>06131 / 123 456 78</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-gray-700 my-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400 mb-4 md:mb-0">&copy; 2025 Wohnraum Plus. Alle Rechte vorbehalten.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-sm text-gray-400 hover:text-secondary transition duration-300">Impressum</a>
+                    <a href="#" class="text-sm text-gray-400 hover:text-secondary transition duration-300">Datenschutz</a>
+                    <a href="#" class="text-sm text-gray-400 hover:text-secondary transition duration-300">AGB</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WA Button -->
+    <a href="#" class="fixed bottom-8 right-8 bg-green-500 w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 transition duration-300 z-50">
+        <i class="fab fa-whatsapp text-white text-3xl"></i>
+    </a>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        // Simple Animation for Counters
+        window.addEventListener('DOMContentLoaded', () => {
+            // Add scroll reveal effects
+            const elements = document.querySelectorAll('.card-hover');
+            
+            window.addEventListener('scroll', () => {
+                elements.forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    const isVisible = rect.top < window.innerHeight - 100;
+                    
+                    if (isVisible) {
+                        el.classList.add('transform', 'scale-[1.02]');
+                        setTimeout(() => {
+                            el.classList.remove('transform', 'scale-[1.02]');
+                        }, 300);
+                    }
+                });
+            });
+            
+            // Smooth scroll for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+    <script id="html_badge_script1">
+        window.__genspark_remove_badge_link = "https://www.genspark.ai/api/html_badge/" +
+            "remove_badge?token=To%2FBnjzloZ3UfQdcSaYfDj0oEN6NSPiuCLLslf4I%2B1boj%2B3TDKgRSHSZnvLN71XZQyX%2FaZavtTzAidAaP7DJCxyqJyp3nVoqHPx8bbBhBJXgWK9SsY1tvUBhRNwIcrMqa4ZoW4CvzNteCsmpTtMqmu3QF3DbKueq69%2BOwCRSrTpOLIsctQhWkDsoHkeObERagBqXpdPcFMCEyG7MwSqnOI552734gm9h6CbBJZrvM4OkPb4UOiXpNMGQcZjYVKNcCWoBKHKnq7liC5ksORS8quoO6%2B3H%2FaP2A5dtpESjRT6vcoGdWnuMY6VXZMSAWk%2BgMTOKSI5g25jb2PEPe9jtTlxA5OMHm5kNaGqWrF16hgm4i05zJvmM5VKIEO1B9sQO%2BSKp4qLaJDhV2mWNclxPxGVQA7ED1jQ1U8ZdlQ52fOs2pJxs71jlLH7NIbZIyN59yriZSbDFaU%2BeZMTu5vEH%2BNRVgJs5Yi50Tv5Q7r0QGQIQ3HIWeGsXV%2FGCJTaHTjC80UpLDMBeCLsthwM1P1lw%2Bg%3D%3D";
+        window.__genspark_locale = "en-US";
+        window.__genspark_token = "To/BnjzloZ3UfQdcSaYfDj0oEN6NSPiuCLLslf4I+1boj+3TDKgRSHSZnvLN71XZQyX/aZavtTzAidAaP7DJCxyqJyp3nVoqHPx8bbBhBJXgWK9SsY1tvUBhRNwIcrMqa4ZoW4CvzNteCsmpTtMqmu3QF3DbKueq69+OwCRSrTpOLIsctQhWkDsoHkeObERagBqXpdPcFMCEyG7MwSqnOI552734gm9h6CbBJZrvM4OkPb4UOiXpNMGQcZjYVKNcCWoBKHKnq7liC5ksORS8quoO6+3H/aP2A5dtpESjRT6vcoGdWnuMY6VXZMSAWk+gMTOKSI5g25jb2PEPe9jtTlxA5OMHm5kNaGqWrF16hgm4i05zJvmM5VKIEO1B9sQO+SKp4qLaJDhV2mWNclxPxGVQA7ED1jQ1U8ZdlQ52fOs2pJxs71jlLH7NIbZIyN59yriZSbDFaU+eZMTu5vEH+NRVgJs5Yi50Tv5Q7r0QGQIQ3HIWeGsXV/GCJTaHTjC80UpLDMBeCLsthwM1P1lw+g==";
+    </script>
+    
+    <script id="html_notice_dialog_script" src="https://www.genspark.ai/notice_dialog.js"></script>
+    
